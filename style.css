@@ -1,0 +1,46 @@
+body
+{
+  color: rgb(241, 238, 9);
+  background: #f7f302;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #snapshot
+{
+  border: 2px dashed rgb(248, 2, 2);
+  width: 350px;
+  height: 300px; 
+}
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: rgb(248, 2, 2);
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
+}
+.heading{
+  font-size: 20px;
+  letter-spacing: 3px;
+  border-radius: 10px;
+  color: gray;
+  text-shadow: rgb(248, 2, 2);
+}
+.div_camera{
+  float: left;
+  padding-top: 100px;
+}
+.div_snapshot{
+  float: right;
+  padding-bottom: 60px;
+  
+}
+.div_pridictionDisplay{
+  padding-left: 100px;
+}

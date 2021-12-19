@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  <center>
+    
+      <h3 class="btn btn-warning heading">gesture web app
+        <br>
+        <span>&#9995;</span>
+        <span>&#9996;</span>
+        <span>&#128072;</span>
+        <span>&#128076;</span>
+        <span>&#128078;</span>
+        <span>&#129304;</span>
+        </h3>
+      
+      </center>
+      <center>
+        <h2 style="color:orange">Take a selfie of the gesture to know the meaning</h2>
+        <p style="color:orange">on the following gesture the model is trained:-</p>
+    
+        <h3 class="btn btn-warning heading">
+          <span>&#9996;</span>
+          <span>&#128076;</span>
+          <span>&#128078;</span>
+        </h3>
+    </center>
+
+      
+      <div class="col-md-4 col-sm-12 col-xs-12 div_camera">
+        <label style="color: purple;font-size: 20px;">Webcam view - </label>
+        <div id="Camera"></div>
+        <br>
+        <button id="capture_button" onclick="take_Snapshot()" class="btn btn-warning">Capture Image</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12 div_pridictionDisplay">
+        <br><br>
+        <label style="color:purple;font-size: 15px;">Pridiction 1 -</label>
+        
+        <p class="emoji" id="update_emoji"></p>
+        
+        <div class="col-md-4 col-sm-12 col-xs-12 div_snapshot">
+	      <label style="color: purple;font-size: 20px;">Snapshot- </label>
+      <div id="result"></div>
+        <br><br>
+        <button onclick="Check()" class="btn btn-success">Predict</button>
+</div>
+
+    
+
+  </div>
+
+
+<script src="main.js"></script>
+
+  </body>
+</html>
